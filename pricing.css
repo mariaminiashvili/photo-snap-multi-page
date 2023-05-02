@@ -100,6 +100,7 @@ body{
     margin: 0 28px;
 }
 
+
 #pricing{
     width: 318px;
     height: 40px;
@@ -133,7 +134,7 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 36px;
-    margin:116px 0 43px;
+    margin:100px 0 63px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -143,26 +144,39 @@ body{
     height: 35px;
     border-radius: 30px;
     background-color: #DFDFDF;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    
 }
 
 .toggle-active{
+    width: 64px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     background-color: #000000;
 }
 
 .toggle-button-active{
-    background-color: #FFFFFF;
-    left: 29px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #DFDFDF;
+    margin-left: 29px;
+    
 }
 
 
-.check-container .toggle .toggle-button{
+.toggle-button{
     width: 24px;
     height: 24px;
     background-color: #000000;
     border-radius: 50%;
     cursor: pointer;
-    margin-left: 5px;
-    margin-top: 5px;
 }
 
 
@@ -177,8 +191,9 @@ body{
     display: flex;
     flex-direction: column;
     gap: 58px;
-
+    margin-top: 65px;
 }
+
 .text-beta{
     width: 314px;
     color: #FFFFFF;
@@ -217,10 +232,16 @@ body{
     margin-top: 20px;
 }
 
+.footer-text{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .arrow-box{
     display: flex;
     flex-direction: row;
 }
+
 
 .arrow{
     width: 42px;
@@ -355,6 +376,23 @@ body{
     margin-top: 40px;
 }
 
+.price-one{
+    width: 245px;
+    font-size: 40px;
+    font-weight:700;
+    letter-spacing: 4.17px;
+    text-align: center;
+    margin-top: 40px;
+}
+.price-two{
+    width: 245px;
+    font-size: 40px;
+    font-weight:700;
+    letter-spacing: 4.17px;
+    text-align: center;
+    margin-top: 40px;
+}
+
 .month{
     width: 245px;
     font-size: 15px;
@@ -364,6 +402,11 @@ body{
     opacity: 60%;
     margin-top: 10px;
     
+}
+
+.plan:hover{
+    background-color: #DFDFDF;
+    color: #000000;
 }
 
 .plan{
@@ -395,11 +438,15 @@ body{
     color: #000000;
 }
 
+#button:hover{
+    background-color:#DFDFDF;
+}
+
 .box-line{
     width: 318px;
     height: 6px;
     background: linear-gradient(90deg,#FFC593 ,#BC7198 ,#5A77FF );
-    transform: translateY(-65px);
+    transform: translateY(-64px);
 }
 
 
@@ -472,11 +519,11 @@ body{
     .black-box{
         width: 100%;
         height: 490px;
-       background-image: url("./assets/pricing/mobile/hero.jpg");
-       background-repeat: no-repeat;
-       background-position: right;
-       display: flex;
-       align-items: center;
+        background-image: url("./assets/pricing/tablet/hero.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        align-items: center;
     }
 
     #pricing{
@@ -491,26 +538,28 @@ body{
 
     .line{
         width: 6px;
-        height: 155px;
+        height: 280px;
         margin: 0;
     }
 
     .footer-top{
         height: 280px;
-        background-image: url("./assets/shared/desktop/bg-beta.jpg");
+        background-image: url("./assets/shared/tablet/bg-beta.jpg");
         background-repeat: no-repeat;
-        flex-direction: row
+        flex-direction: row;
+        gap:0;
+        margin-top: 150px;
     }
 
     .text-container{
+        width: 100%;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         margin-left: 0;
-        gap: 177px;
-    }
+        gap:150px;
+        padding: 50px;
 
-    #footer-line{
-        height: 280px;
     }
 
     .arrow-top{
@@ -551,6 +600,7 @@ body{
     
     .left-text{
         gap: 104px;
+        align-items: end;
     }
     
     .copyright-date{
@@ -592,7 +642,7 @@ body{
         position: absolute;
     }
 
-}
+    }
 
 
  @media screen  and (min-width: 1250px){
@@ -618,20 +668,17 @@ body{
         margin: 0 369px 0 0;
     }
 
-    .container-box{
+    /* .container-box{
         display: flex;
         align-items: center;
         flex-direction: row;
-    }
-
-    /* .price-container{
-        width: 318px;
-       height: 270px;
     } */
+
     .container-box{
         display: flex;
-        flex-direction: column;
-        gap:20px;
+        flex-direction: row;
+        align-items: center;
+        gap:30px;
     }
     
     .price-container{
@@ -695,6 +742,7 @@ body{
     #black-container{
         color: #FFFFFF;
         background-color: #000000;
+        height: 470px;
     }
     
     #text { 
