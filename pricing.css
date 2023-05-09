@@ -80,7 +80,14 @@ body{
     font-weight: 700;
     letter-spacing: 2px;
     border: none;
+    cursor: pointer;
 }
+
+.button:hover{
+      background-color: #DFDFDF;
+      color: #000000;
+}
+
 
 .mobile-hero{
     width: 100%;
@@ -217,11 +224,92 @@ body{
 .text-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
-    margin-left: 28px;
+    
 }
 
+.tick-list-container{
+    width: 318px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 23px; */
+    margin-top: 64px;
+}
+
+.compare{
+    display: none;
+}
+
+.Features{
+    width: 140px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.line-grey{
+    width: 100%;
+    height: 2px;
+    color: #000000;
+    margin-bottom: 23px;
+}
+
+.tick-header{
+    display: grid;
+
+}
+
+.story{
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.list{
+    color: #000000;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.67px;
+    opacity: 50%;
+}
+.under-line{
+    width: 100%;
+    background-color: #DFDFDF;
+    height: 2px;
+    opacity: 50%;
+    margin-bottom: 23px;
+}
+
+.check{
+    margin: 8px 0 24px;
+    display: flex;
+    gap: 30%;
+    margin-left: -75px;
+}
+
+#two-check{
+    margin-left: 119px;
+    gap: 103px;
+}
+
+#one-check{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 59px
+}
+
+.category{
+    display: flex;
+    gap: 25%;
+}
+
+.category-hidden{
+    display: none;
+}
 /* footer section */
 
 .text-footer{
@@ -418,6 +506,7 @@ body{
     background-color: #000000;
     border: none;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 #black-container{
@@ -541,7 +630,74 @@ body{
         height: 280px;
         margin: 0;
     }
+ 
+    .compare{
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 4.17px;
+        text-align: center;
+        margin-bottom: 64px;
+    }
 
+    .tick-list-container{
+        width: 689px;
+        gap: 0;
+    }
+
+    .category{
+        display: none;
+    }
+
+    .category-hidden{
+        display: flex;
+        gap: 91px;
+        margin-left: 189px;
+    }
+
+    .two-check-cont{
+        display: flex;
+        align-items: center;
+    }
+
+    .one-check-cont{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .story{
+        margin-bottom: 0;
+        width: 241px;
+    }
+
+    #two-check{
+        margin-left: 237px;
+        gap: 114px
+    }
+
+    .features-position{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .line-grey{
+        width: 689px;
+    }
+
+    .position{
+        display: flex;
+        align-items: center;
+    }
+
+    .check{
+        display: flex;
+        justify-content: space-between;
+        gap: 115px;
+        margin-left: 133px;
+    }
+
+   
     .footer-top{
         height: 280px;
         background-image: url("./assets/shared/tablet/bg-beta.jpg");
@@ -555,10 +711,10 @@ body{
         width: 100%;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-left: 0;
         gap:150px;
-        padding: 50px;
+        /* padding: 50px; */
 
     }
 
@@ -651,10 +807,10 @@ body{
         background-image: url("./assets/pricing/desktop/hero.jpg");
     }
 
-    .footer-top{
+    /* .footer-top{
         gap: 171px;
         
-     }
+     } */
 
         /* footer section 1440px */
     .footer-container{
